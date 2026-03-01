@@ -1,0 +1,16 @@
+Partner Merchant (Amazon)
+        │
+        │ Refund API / Webhook
+        ▼
+API Gateway
+        │
+        ▼
+Refund Management Microservice
+        │
+ ┌──────┼───────────────┬──────────────┐
+ │      │               │              │
+ ▼      ▼               ▼              ▼
+Loan Service   Limit Management   Billing Engine   Settlement Service
+ │
+ ▼
+Customer Refund Processor (IBAN transfer)
